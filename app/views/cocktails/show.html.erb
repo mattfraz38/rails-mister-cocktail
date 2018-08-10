@@ -1,2 +1,4 @@
-show.html.erb
-<h1><%= @cocktail.id %></h1>
+<h1><%= @cocktail.name %></h1>
+
+<p><%= @cocktail.ingredients %></p>
+<%= link_to "Back to list", cocktails_path %>

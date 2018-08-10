@@ -2,6 +2,6 @@
 <h2>Menu</h2>
 
 <p><%= link_to "Create", new_cocktail_path %></p>
-<p><% @cocktails.each do |cocktail| %></p>
-  <%= cocktail.name %>
+<% @cocktails.each do |cocktail| %>
+<p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
 <% end %>
