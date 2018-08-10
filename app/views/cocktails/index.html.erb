@@ -1,6 +1,7 @@
 <h1>Welcome to Mr. Cocktail</h1>
 <h2>Menu</h2>
 
+<p><%= link_to "Create", new_cocktail_path %></p>
 <p><% @cocktails.each do |cocktail| %></p>
   <%= cocktail.name %>
 <% end %>
