@@ -1,5 +1,6 @@
 class CocktailsController < ApplicationController
-  before_action :find_cocktail_id, only: [:show, :create]
+  before_action :set_cocktail, only: [:show]
+
   def index
     @cocktails = Cocktail.all
   end
@@ -12,13 +13,21 @@ class CocktailsController < ApplicationController
   end
 
   def create
-    # @cocktail.save
-    # redirect_to cocktail_path(@cocktail.id)
+    @cocktail = Cocktail.new(cocktail_params)
+    if @cocktail.save
+      redirect_to @cocktail
+    else
+      render :new
+    end
   end
 
   private
 
-  def find_cocktail_id
+  def set_cocktail
     @cocktail = Cocktail.find(params[:id])
+  end
+
+  def cocktail_params
+    params.require(:cocktail).permit(:name)
   end
 end
