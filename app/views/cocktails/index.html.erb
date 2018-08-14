@@ -2,6 +2,21 @@
 <h2>Menu</h2>
 
 <p><%= link_to "Create", new_cocktail_path %></p>
-<% @cocktails.each do |cocktail| %>
-<p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
-<% end %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+
+      <% @cocktails.each do |cocktail| %>
+        <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+      <% end %>
+
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+    </div>
+  </div>
+</div>
