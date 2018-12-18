@@ -1,3 +1,7 @@
+a {
+  color: white;
+  text-decoration: none;
+}
 /* Main navbar */
 .navbar-wagon {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
@@ -40,10 +44,10 @@
   color: #616668;
   font-size: 14px;
 }
-.navbar-wagon-link:hover {
-  color: #da552f;
-  text-decoration: none;
-}
+// .navbar-wagon-link:hover {
+//   color: #da552f;
+//   text-decoration: none;
+// }
 
 /* Dropdown menu */
 .navbar-wagon-dropdown-menu {
@@ -76,16 +80,42 @@
   border-top: 1px solid #E6E6E6;
 }
 
-.navbar-wagon-button {
+// .navbar-wagon-button {
+//   margin-left: 10px;
+//   padding: 0 20px;
+//   border-radius: 20em;
+//   line-height: 40px;
+//   background-color: #D23333;
+//   color: white;
+//   font-size: 14px;
+//   border: 2px solid #D23333;
+// }
+
+.create-cocktail-button {
   margin-left: 10px;
   padding: 0 20px;
   border-radius: 20em;
   line-height: 40px;
   background-color: #D23333;
-  color: white;
+  // color: white;
+  font-weight: bold;
   font-size: 14px;
-  border: 2px solid #D23333;
+  // border: 2px solid #D23333;
+  &:hover {
+  color: #D23333 !important;
+  border: 2px solid #D23333 !important;
+  // text-decoration: none !important;
+  background-color: white !important;
+  & a:hover {
+    text-decoration: none;
+    color: #D23333 !important;
+    }
+  }
 }
+// .create-cocktail-button:hover {
+//   color: #da552f;
+//   text-decoration: none;
+// }
 
 .creator-avatar {
   height: 35px;
