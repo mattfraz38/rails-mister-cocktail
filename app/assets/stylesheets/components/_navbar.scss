@@ -1,6 +1,6 @@
 a {
-  color: white;
-  text-decoration: none;
+  color: white !important;
+  text-decoration: none !important;
 }
 /* Main navbar */
 .navbar-wagon {
@@ -102,14 +102,14 @@ a {
   font-size: 14px;
   // border: 2px solid #D23333;
   &:hover {
-  color: #D23333 !important;
-  border: 2px solid #D23333 !important;
+  // color: #D23333 !important;
+  border: 1px solid #D23333 !important;
   // text-decoration: none !important;
-  background-color: white !important;
-  & a:hover {
-    text-decoration: none;
-    color: #D23333 !important;
-    }
+  background-color: #FF3E3E !important;
+  // & a:hover {
+  //   text-decoration: none;
+  //   color: #D23333 !important;
+  //   }
   }
 }
 // .create-cocktail-button:hover {
